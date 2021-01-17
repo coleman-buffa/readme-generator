@@ -6,7 +6,7 @@ const gMD = require('./utils/generateMarkdown.js');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
+// Question array for user input
 const questions = [
 	{
 		type: 'input',
@@ -67,12 +67,10 @@ function writeToFile(fileName, data) { }
 async function init() {
 	try {
 		const answers = await promptUser(questions);
-		
-		console.log(answers);
 
 		const md = gMD.generateMarkdown(answers);
 
-		writeFileAsync('blank-README.md', md);
+		// writeFileAsync('blank-README.md', md);
 
 		console.log('Succesfully wrote to blank-README.md');
 	} catch (err) {
