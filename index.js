@@ -10,7 +10,7 @@ const writeFileAsync = util.promisify(fs.writeFile);
 const questions = [
 	{
 		type: 'input',
-		name: 'name',
+		name: 'title',
 		message: 'What is the name of your project?',
 	},
 	{
@@ -70,7 +70,7 @@ async function init() {
 
 		const md = gMD.generateMarkdown(answers);
 
-		// writeFileAsync('blank-README.md', md);
+		await writeFileAsync('blankREADME.md', md);
 
 		console.log('Succesfully wrote to blank-README.md');
 	} catch (err) {
