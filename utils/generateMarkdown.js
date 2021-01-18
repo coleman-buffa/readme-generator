@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 	switch (license) {
@@ -17,7 +17,7 @@ function renderLicenseBadge(license) {
 	}
 }
 
-// TODO: Create a function that returns the license link
+// Returns the license link 
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 	switch (license) {
@@ -36,7 +36,17 @@ function renderLicenseLink(license) {
 	}
 }
 
-// TODO: Create a function that returns the license section of README
+// Returns the title text in the ToC that is formatted correctly for markdown linking
+const tocTitle = (title) => {
+	let titleLower = title.toLowerCase();
+	if (titleLower.indexOf(' ') >= 0) {
+		return titleLower.split(' ').join('-')
+	} else {
+		return titleLower
+	}
+}
+
+// Growing room for making an entire license section
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
@@ -50,7 +60,7 @@ ${data.description}
 
 ||||
 |:-|:-|:-|:-|:-
-| [Project Introduction](#${data.title}) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
+| [Project Introduction](#${tocTitle(data.title)}) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
 | [Authors](#authors) | [Acknowledgments](#acknowledgments) | [License](#license) |
 ---
@@ -67,7 +77,7 @@ ${data.usage}
 
 ## Technologies 
 
-* [Technology Used](URL)
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Testing
 
@@ -75,10 +85,9 @@ ${data.testing}
 
 ## Authors
 
-Your name here
 Email: ${data.email}
 
-- [Link to Git Hub](https://github.com/${data.github}/)
+- [Git Hub Profile](https://github.com/${data.github}/)
 
 ## Acknowledgments
 
@@ -87,7 +96,6 @@ ${data.contribution}
 ## License
 
 ${renderLicenseBadge(data.license)}
-${renderLicenseLink(data.license)}
 
 ### [Back to Table of Contents](#table-of-contents)
 `
