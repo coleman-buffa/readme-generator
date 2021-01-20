@@ -36,6 +36,10 @@ function renderLicenseLink(license) {
 	}
 }
 
+// Growing room for making an entire license section
+// If there is no license, return an empty string
+function renderLicenseSection(license) {}
+
 // Returns the title text in the ToC that is formatted correctly for markdown linking
 const tocTitle = (title) => {
 	let titleLower = title.toLowerCase();
@@ -46,11 +50,7 @@ const tocTitle = (title) => {
 	}
 }
 
-// Growing room for making an entire license section
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
+// Generates the README template
 function generateMarkdown(data) {
     return `# ${data.title}
 
@@ -62,7 +62,7 @@ ${data.description}
 |:-|:-|:-|:-|:-
 | [Project Introduction](#${tocTitle(data.title)}) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
-| [Authors](#authors) | [Acknowledgments](#acknowledgments) | [License](#license) |
+| [Authors](#authors) | [Contribution](#contribution) | [License](#license) |
 ---
 
 ## Goals and Methods
@@ -89,7 +89,7 @@ Email: ${data.email}
 
 - [Git Hub Profile](https://github.com/${data.github}/)
 
-## Acknowledgments
+## Contribution
 
 ${data.contribution}
 

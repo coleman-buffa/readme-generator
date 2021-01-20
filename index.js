@@ -11,48 +11,48 @@ const questions = [
 	{
 		type: 'input',
 		name: 'title',
-		message: 'What is the name of your project?',
+		message: 'Enter project name:',
 	},
 	{
 		type: 'input',
 		name: 'description',
-		message: 'Enter project description',
+		message: 'Enter project description:',
 	},
 	{
 		type: 'input',
 		name: 'instructions',
-		message: 'Enter project installation instructions',		
+		message: 'Enter installation instructions:',		
 	},
 	{
 		type: 'input',
 		name: 'usage',
-		message: 'Enter project usage information',
+		message: 'Enter project usage information:',
 	},
 	{
 		type: 'input',
 		name: 'contribution',
-		message: 'Enter guidelines on how to contribute',
+		message: 'Enter guidelines on how to contribute:',
 	},
 	{
 		type: 'input',
 		name: 'testing',
-		message: 'Enter test instructions',
+		message: 'Enter test instructions:',
 	},
 	{
 		type: 'list',
 		name: 'license',
-		message: 'Select your license:',
+		message: 'Select a license:',
 		choices: ['MIT', 'CCO', 'ISC', 'WTFPL', 'Unlicense'],
 	},
 	{
 		type: 'input',
 		name: 'github',
-		message: 'Enter your GitHub user name',
+		message: 'Enter your GitHub user name:',
 	},
 	{
 		type: 'input',
 		name: 'email',
-		message: 'Enter your email address',		
+		message: 'Enter your email address:',		
 	},
 ];
 
