@@ -58,8 +58,8 @@ ${data.description}
 
 ## Table of Contents
 
-||||
-|:-|:-|:-|:-|:-
+| |||
+|:-|:-|:-|
 | [Project Introduction](#${tocTitle(data.title)}) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
 | [Authors](#authors) | [Contribution](#contribution) | [License](#license) |

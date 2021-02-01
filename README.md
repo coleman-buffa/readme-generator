@@ -6,8 +6,8 @@ Welcome to my first README.md generator application! This utility will produce a
 
 ## Table of Contents
 
-||||
-|:-|:-|:-|:-|:-
+| |||
+|:-|:-|:-|
 | [Project Introduction](#readme-generator) | [Table of Contents](#table-of-contents) | [Goals and Methods](#goals-and-methods) 
 | [Installation and Use](#installation-and-use) | [Technologies](#technologies) | [Deployed Link](#deployed-link) |
 | [Authors](#authors) | [Acknowledgments](#acknowledgments) | [License](#license) |
